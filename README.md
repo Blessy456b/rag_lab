@@ -5,16 +5,19 @@ Users can mix elements virtually, observe predicted reactions, and query a conte
 ---
 
 ## 🧪 Overview
+## 📑 Table of Contents
 
-RAG Lab is built to help developers and researchers:
-- Prototype and evaluate RAG systems efficiently.
-- Integrate multiple vector databases and embedding models.
-- Fine-tune prompt templates for domain-specific retrieval.
-- Understand *why* each part of the RAG pipeline matters.
+- [🌟 Overview](#-overview)
+- [📁 Repository Structure](#-architecture)
+- [⚙️ Installation Guide](#️-environment-setup)
+- [🚀 Running the App](#-running-the-rag-app)
+- [📚 Data & Knowledge Base](#-data-preparation)
+- [🧩 Prompt Templates & RAG Workflow](#-prompt-templates)
+- [🧰 Features](#-key-features)
+- [💡 Why This Project is Useful](#-why-this-project-is-useful)
+- [🧭 Roadmap](#-roadmap)
+- [🤝 Contributing](#-how-to-contribute)
+- [📜 License](#-license)
+- [❤️ Acknowledgements](#️-acknowledgements)
 
-This project serves as both a **learning lab** and a **production-ready template**.
-
----
-
-## 🧩 Architecture
-🧪
+## ⚙️ Environment Setup
