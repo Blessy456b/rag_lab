@@ -138,21 +138,24 @@ python3 -m venv rag_lab_env
 # Activate (Linux/Mac)
 ```bash
 source rag_lab_env/bin/activate
-
+```
 
 Step 3 — Install Dependencies
-bash
+```bash
 Copy code
 pip install -r requirements.txt
+```
 ▶️ Running the App
 🧠 Option 1 — Streamlit Interface
-bash
+```bash
 Copy code
 streamlit run app_lab_chat.py
+```
 ⚙️ Option 2 — Command-Line Testing
-bash
+```bash
 Copy code
 python3 rag_assistant.py
+```
 Use this mode to test retrieval and response generation without a GUI.
 
 🧠 Data & Knowledge Base
