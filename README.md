@@ -204,6 +204,6 @@ This project is licensed under the MIT License — free for academic, research, 
 
 ### 🧪 Credits
 Developed by: Blessy Thomas
-Built with ❤️ using Streamlit, LangChain, and Vector Search.
+Built with curioisity using Streamlit, LangChain, and Vector Search.
 
 
