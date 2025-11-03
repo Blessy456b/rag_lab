@@ -172,31 +172,31 @@ These are automatically vectorized at runtime for retrieval and reasoning.
 
 ### 🧩 Prompt Template & RAG Workflow
 🔁 Flow:
-User enters query → “Reaction between Zn and O₂”
+- User enters query → “Reaction between Zn and O₂”
 
-Query is embedded via a transformer model
+- Query is embedded via a transformer model
 
-Most relevant text chunks retrieved from data/*.txt
+- Most relevant text chunks retrieved from data/*.txt
 
-Retrieved content + user query → fed into a prompt
+- Retrieved content + user query → fed into a prompt
 
-Model generates accurate, explainable answers
+- Model generates accurate, explainable answers
 
 ### 💡 Why It Matters:
-Reduces AI hallucination
+- Reduces AI hallucination
 
-Keeps responses domain-grounded
+- Keeps responses domain-grounded
 
-Makes system adaptable to new subjects — simply swap .txt files!
+- Makes system adaptable to new subjects — simply swap .txt files!
 
 ### 🚀 Future Improvements
-🌐 Multilingual chemistry support (Hindi, Marathi, etc.)
+- 🌐 Multilingual chemistry support (Hindi, Marathi, etc.)
 
-🧪 Reaction visualization with animations
+- 🧪 Reaction visualization with animations
 
-📊 Store user experiment logs/history
+-  📊 Store user experiment logs/history
 
-🧬 Extend to Physics and Biology domains
+-  🧬 Extend to Physics and Biology domains
 
 ### 📜 License
 This project is licensed under the MIT License — free for academic, research, and educational use.
@@ -204,5 +204,6 @@ This project is licensed under the MIT License — free for academic, research, 
 ### 🧪 Credits
 Developed by: Blessy Thomas
 Built with curioisity using Streamlit, LangChain, and Vector Search.
+Reach out at blessy456bthomas@gmail.com
 
 
