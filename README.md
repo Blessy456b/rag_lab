@@ -47,7 +47,7 @@ rag_lab/
 └── README.md # You are here
 
 yaml
-Copy code
+
 
 ---
 
@@ -93,7 +93,7 @@ Copy code
 Reaction between Zn and HCl
 
 yaml
-Copy code
+
 
 **This ensures:**
 - ✅ Consistency across responses  
@@ -131,7 +131,7 @@ cd rag_lab/src
 ```
 Step 2 — Create and Activate Virtual Environment
 ```bash
-Copy code
+
 # Create virtual environment
 python3 -m venv rag_lab_env
 ```
@@ -142,36 +142,36 @@ source rag_lab_env/bin/activate
 
 Step 3 — Install Dependencies
 ```bash
-Copy code
+
 pip install -r requirements.txt
 ```
-▶️ Running the App
+### ▶️ Running the App
 🧠 Option 1 — Streamlit Interface
 ```bash
-Copy code
+
 streamlit run app_lab_chat.py
 ```
 ⚙️ Option 2 — Command-Line Testing
 ```bash
-Copy code
+
 python3 rag_assistant.py
 ```
 Use this mode to test retrieval and response generation without a GUI.
 
-🧠 Data & Knowledge Base
+### 🧠 Data & Knowledge Base
 All domain knowledge is stored as .txt files under data/.
 
 Examples:
 
-reactions_knowledge.txt → Common chemical reactions
+- reactions_knowledge.txt → Common chemical reactions
 
-water_formation.txt → Oxidation and combustion
+- water_formation.txt → Oxidation and combustion
 
-biotechnology.txt → (Optional) cross-domain test
+- biotechnology.txt → (Optional) cross-domain test
 
 These are automatically vectorized at runtime for retrieval and reasoning.
 
-🧩 Prompt Template & RAG Workflow
+### 🧩 Prompt Template & RAG Workflow
 🔁 Flow:
 User enters query → “Reaction between Zn and O₂”
 
@@ -183,14 +183,14 @@ Retrieved content + user query → fed into a prompt
 
 Model generates accurate, explainable answers
 
-💡 Why It Matters:
+### 💡 Why It Matters:
 Reduces AI hallucination
 
 Keeps responses domain-grounded
 
 Makes system adaptable to new subjects — simply swap .txt files!
 
-🚀 Future Improvements
+### 🚀 Future Improvements
 🌐 Multilingual chemistry support (Hindi, Marathi, etc.)
 
 🧪 Reaction visualization with animations
@@ -199,13 +199,11 @@ Makes system adaptable to new subjects — simply swap .txt files!
 
 🧬 Extend to Physics and Biology domains
 
-📜 License
+### 📜 License
 This project is licensed under the MIT License — free for academic, research, and educational use.
 
-🧪 Credits
+### 🧪 Credits
 Developed by: Blessy Thomas
 Built with ❤️ using Streamlit, LangChain, and Vector Search.
 
-yaml
-Copy code
 
