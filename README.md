@@ -39,12 +39,12 @@ rag_lab/
 │
 ├── data/                         # Knowledge base of text files (e.g. reactions_knowledge.txt)    
 │
-├── src/  
+├── src/ ``` 
 │  │   ├── app_lab_chat.py           # Streamlit user interface for the virtual lab  
 │  │   ├── rag_assistant.py          # Core RAG logic integrating retrieval + generation  
 │  │   ├── vector_db.py              # Vector store creation and similarity search  
 │  │  └── requirements.txt          # All dependencies  
-│
+│```
 └── README.md                     # You are here  
 
 
