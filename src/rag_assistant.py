@@ -9,6 +9,7 @@ from langchain_groq import ChatGroq
 from langchain_openai import ChatOpenAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 
+
 load_dotenv()
 
 
@@ -46,10 +47,10 @@ class RAGAssistant:
         """Select available LLM."""
         if os.getenv("GROQ_API_KEY"):
             return ChatGroq(api_key=os.getenv("GROQ_API_KEY"), model="llama-3.1-8b-instant")
-        elif os.getenv("OPENAI_API_KEY"):
-            return ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model="gpt-4o-mini")
         elif os.getenv("GOOGLE_API_KEY"):
-            return ChatGoogleGenerativeAI(google_api_key=os.getenv("GOOGLE_API_KEY"), model="gemini-1.5-flash")
+            return ChatGoogleGenerativeAI(
+            model="gemini-1.5-flash",  # or "gemini-1.5-pro"
+            google_api_key=os.getenv("GOOGLE_API_KEY"))
         else:
             raise ValueError("❌ No API key found in environment variables.")
 
