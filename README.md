@@ -147,9 +147,9 @@ pip install -r requirements.txt
 ```
 Your assistant supports GROQ model backend
 
-Step 4 — Provider Model Example Environment Variable
-🧠 Groq llama-3.1-8b-instant GROQ_API_KEY
-🔧 Create a .env file inside /src:
+Step 4 — Provider Model Example Environment Variable  
+🧠 Groq llama-3.1-8b-instant GROQ_API_KEY  
+🔧 Create a .env file inside /src:  
 ```bash
 nano .env
 ```
