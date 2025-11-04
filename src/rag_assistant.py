@@ -49,7 +49,7 @@ class RAGAssistant:
         elif os.getenv("OPENAI_API_KEY"):
             return ChatOpenAI(api_key=os.getenv("OPENAI_API_KEY"), model="gpt-4o-mini")
         elif os.getenv("GOOGLE_API_KEY"):
-            return ChatGoogleGenerativeAI(google_api_key=os.getenv("GOOGLE_API_KEY"), model="gemini-pro")
+            return ChatGoogleGenerativeAI(google_api_key=os.getenv("GOOGLE_API_KEY"), model="gemini-1.5-flash")
         else:
             raise ValueError("❌ No API key found in environment variables.")
 
