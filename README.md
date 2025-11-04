@@ -145,6 +145,23 @@ Step 3 — Install Dependencies
 
 pip install -r requirements.txt
 ```
+Your assistant supports GROQ model backend
+
+Step 4 — Provider Model Example Environment Variable
+🧠 Groq llama-3.1-8b-instant GROQ_API_KEY
+🔧 Create a .env file inside /src:
+```bash
+nano .env
+```
+Add the following lines depending on which API you plan to use:
+Example 1 — Using Groq
+```bash
+GROQ_API_KEY=your_groq_key_here
+```
+⚠️ Security Note:
+Do not share .env files or commit them to GitHub.
+Instead, include a .env_example file showing the required variable names without real values.
+
 ### ▶️ Running the App
 🧠 Option 1 — Streamlit Interface
 ```bash
