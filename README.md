@@ -1,3 +1,4 @@
+# Chemixtry - Chatbot - Lab for Chemical Reactions
 # 🧠 Virtual Chemistry RAG Lab 
 Welcome to  **RAG Lab**-   An interactive Retrieval-Augmented Generation (RAG) application built with Streamlit, combining AI-assisted chemistry reasoning and a vector-based knowledge base.
 Users can mix elements virtually, observe predicted reactions, and query a context-aware assistant that reasons using scientific text files stored locally.
@@ -39,7 +40,7 @@ rag_lab/
 │
 ├── data/                         # Knowledge base of text files (e.g. reactions_knowledge.txt)    
 │
-├── src/ 
+├── src/  
 │  │   ├── app_lab_chat.py           # Streamlit user interface for the virtual lab  
 │  │   ├── rag_assistant.py          # Core RAG logic integrating retrieval + generation  
 │  │   ├── vector_db.py              # Vector store creation and similarity search  
