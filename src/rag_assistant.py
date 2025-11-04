@@ -48,9 +48,7 @@ class RAGAssistant:
         if os.getenv("GROQ_API_KEY"):
             return ChatGroq(api_key=os.getenv("GROQ_API_KEY"), model="llama-3.1-8b-instant")
         elif os.getenv("GOOGLE_API_KEY"):
-            return ChatGoogleGenerativeAI(
-            model="gemini-1.5-flash",  # or "gemini-1.5-pro"
-            google_api_key=os.getenv("GOOGLE_API_KEY"))
+            return ChatGoogleGenerativeAI(model="gemini-2.5-flash",temperature=0,max_tokens=None,timeout=None,max_retries=2)
         else:
             raise ValueError("❌ No API key found in environment variables.")
 
