@@ -77,7 +77,7 @@ Ask contextual questions such as:
 The assistant answers based on **retrieved chemistry data** and **reasoned interpretation**.
 
 ---
-![Sample_Overview_Image](sample_image_01.png)
+![Sample_Overview_Image](images/sample_image_01.png)
 ### 🧠 4. Prompt Templates & Context Reasoning
 
 #### 🧩 Prompt Template Design
