@@ -77,7 +77,7 @@ Ask contextual questions such as:
 The assistant answers based on **retrieved chemistry data** and **reasoned interpretation**.
 
 ---
-
+![Sample_Overview_Image](sample_image_01.png)
 ### 🧠 4. Prompt Templates & Context Reasoning
 
 #### 🧩 Prompt Template Design
@@ -147,8 +147,9 @@ Ensures traceable and verifiable outputs (no hallucinations).
 Leverages generative AI reasoning (LLM) for conceptual discussions.
 Offers explanatory, exploratory, and creative chemistry interactions.
 Enables contextual dialogue (“Why does heating sodium release light?”).
-
 ---
+![Sample_Image1](sample_image_01.png)
+![Sample_Image2](sample_image_01.png)
 
 ### 🧩 5. Vector Database Integration
 
