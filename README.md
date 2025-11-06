@@ -80,25 +80,73 @@ The assistant answers based on **retrieved chemistry data** and **reasoned inter
 
 ### 🧠 4. Prompt Templates & Context Reasoning
 
-Structured **prompt templates** control AI behavior and ensure reliability.
+#### 🧩 Prompt Template Design
+The Virtual Chemistry RAG Lab employs a structured prompt-based reasoning framework embedded within the RAGAssistant class.
+This design ensures that the language model operates under controlled scientific constraints, adapting its reasoning behavior according to the selected operational mode —** Strict or Creative.**
 
-**System Prompt Example:**
-You are a chemistry lab assistant.
-Explain reactions in simple, factual, and educational terms using the retrieved context.
+The prompt structure consists of two key components:
 
-markdown
-Copy code
+- System Prompt — Defines the assistant’s personality, safety rules, and factual boundaries.
 
-**User Prompt Example:**
-Reaction between Zn and HCl
+- User Template — Dynamically injects the retrieved contextual text and user query during runtime.
 
-yaml
+##### 1️⃣ System Prompt (Strict Mode)
+Used when the model must produce strictly factual responses derived only from the retrieved knowledge base.
+You are ChemGPT, a Virtual Chemistry Lab Assistant that answers ONLY
+based on the retrieved knowledge base context. This is STRICT mode.
 
+Rules:
 
-**This ensures:**
-- ✅ Consistency across responses  
-- ✅ Explainability (uses only retrieved verified text)  
-- ✅ Educational clarity for learners
+- NEVER hypothesize or guess missing reactions.
+- NEVER reference unrelated reactions or analogies.
+- If context lacks information, say exactly:
+- "No known reaction found in current knowledge base."
+- Refuse unsafe, illegal, or manipulative questions.
+- Use concise scientific tone with markdown formatting.
+- Remember: You are not generating — you are retrieving factual info only.
+
+This configuration enforces retrieval integrity — the model is constrained to operate purely within the context of verified chemistry data.
+It prevents hallucination and maintains scientific trustworthiness.
+
+##### 2️⃣ System Prompt (Creative Mode)
+Used when the model is allowed to perform guided reasoning or educational expansion beyond the retrieved text.
+You are ChemGPT Creative Mode — a Chemistry Assistant that combines
+the retrieved context with your general scientific knowledge.
+
+Rules:
+
+- Start from context if available.
+- If missing, you MAY infer plausible scientific explanations.
+- Label inferred parts clearly, e.g., "Based on known chemistry..."
+- Always include safety notes and clear disclaimers.
+- Keep the tone educational and accurate.
+This configuration encourages exploratory reasoning while maintaining transparency — any inference is explicitly labeled, ensuring the distinction between factual and generated content.
+
+##### 3️⃣ User Prompt Template
+Both modes utilize a shared template that injects retrieved text and user query into the LLM input during inference:
+Context:
+{context}
+
+User Question:
+{question}
+Answer:
+
+This template ensures a consistent reasoning pipeline — the assistant always grounds its answers in retrieved context before generating a response.
+User Prompt:
+Reaction between Zn and HCl.
+This ensures factuality, educational tone, and consistent structure across responses.
+
+### Modes of Operation
+#### 4.1 Retrieval Mode (Offline)
+
+Uses only locally stored .txt documents.
+Works entirely offline — suitable for educational institutions.
+Ensures traceable and verifiable outputs (no hallucinations).
+#### 4.2 Chat Mode (Interactive Q&A)
+
+Leverages generative AI reasoning (LLM) for conceptual discussions.
+Offers explanatory, exploratory, and creative chemistry interactions.
+Enables contextual dialogue (“Why does heating sodium release light?”).
 
 ---
 
