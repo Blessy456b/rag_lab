@@ -148,8 +148,8 @@ Leverages generative AI reasoning (LLM) for conceptual discussions.
 Offers explanatory, exploratory, and creative chemistry interactions.
 Enables contextual dialogue (“Why does heating sodium release light?”).
 ---
-![Sample_Image1](sample_image_01.png)
-![Sample_Image2](sample_image_01.png)
+![Sample_Image1](images/sample_image_02.png)
+![Sample_Image2](images/sample_image_03.png)
 
 ### 🧩 5. Vector Database Integration
 
